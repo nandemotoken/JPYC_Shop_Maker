@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>JPYC_Shop_Maker</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body style="background: linear-gradient(90deg, rgb(197,231,234) 0%, rgb(206,199,236));">
+    <div class="row">
+        <div class="col">
+            <h1>　JPYC Shop</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3 offset-5">
+            <div><img id="mainimage" src="assets/img/tropical_drink.png" height="50%" style="width: 48%;">
+                <h2 id="pricing">500 JPYC</h2><a class="btn btn-info" role="button" href="javascript:TokenPayment()">JPYC Payment</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h2 id="message" style="margin-top: 50px;text-align: center;">ここに説明文が出ます</h2>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="wallet-popup">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">ウォレットを選択</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body">
+                    <div style="text-align: center;"><a href="javascript:loadwallet()"><img src="assets/img/mm-logo.svg"></a><a href="javascript:loadTorus()"><img src="assets/img/torus-wordmark-blue-p-500.png" style="width: 100px;margin-left: 32px;"></a></div>
+                </div>
+                <div class="modal-footer">
+                    <p>Ethereumメインネットに設定してください</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/abi.js"></script>
+    <script src="https://cdn.ethers.io/lib/ethers-5.0.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@toruslabs/torus-embed"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/SETTING.js"></script>
+</body>
+
+</html>
