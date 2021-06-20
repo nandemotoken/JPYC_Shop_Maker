@@ -1,5 +1,5 @@
 # JPYC_Shop_Maker
-JPYCを利用した店舗向け決済システムです (ver1はJPYC on Maticに対応)
+JPYCを利用した店舗向け決済システムです (今はJPYC on Maticに対応)
 
 使い方  
 ①画面右上のforkボタンから、githubの自分のリポジトリにコピー。  
