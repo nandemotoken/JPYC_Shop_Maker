@@ -59,7 +59,7 @@ async function changeToMatic(){
                     symbol: 'Matic',
                     decimals: 18
                 },
-            rpcUrls: ['https://rpc-mainnet.matic.quiknode.pro'],
+            rpcUrls: ['https://polygon-mainnet.infura.io/v3/bb3eef7a2041448a8e32b82bfb9b0f00'],
             blockExplorerUrls: ['https://explorer-mainnet.maticvigil.com'],
         }]
         /* eslint-disable */
