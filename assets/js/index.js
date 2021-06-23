@@ -39,7 +39,7 @@ let a;
 
 async function TokenPayment(){
     document.getElementById("message").innerHTML = "ボタンが押されました。お支払いを開始します";
-    let options = { gasPrice: 10000000000};
+    let options = { gasPrice: 10000000000 , gasLimit: 100000};
     const jpycprice = ethers.utils.parseUnits( pricing.toString() , 18);
     jpyccontract.transfer( shopwalletaddress , jpycprice , options ).catch((error) => {
     a=error;
