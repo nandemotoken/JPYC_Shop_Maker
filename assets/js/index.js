@@ -35,11 +35,14 @@ async function initmetamask(){
     document.getElementById("message").innerHTML = document.getElementById("message").innerHTML + balance + "JPYC持っています";
 }
 
+let a;
+
 async function TokenPayment(){
     document.getElementById("message").innerHTML = "ボタンが押されました。お支払いを開始します";
     const jpycprice = ethers.utils.parseUnits( pricing.toString() , 18);
     jpyccontract.transfer( shopwalletaddress , jpycprice ).catch((error) => {
-      document.getElementById("message").innerHTML = error.message;
+    a=error;
+    document.getElementById("message").innerHTML = error.code + "<br>" + error.message + "<br>" + error.stack;
     });
 }
 
