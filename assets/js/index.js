@@ -54,7 +54,7 @@ async function changeToMatic(){
                     decimals: 18
                 },
             rpcUrls: ['https://rpc-mainnet.matic.network'],
-            blockExplorerUrls: ['https://polygonscan.com/'],
+            blockExplorerUrls: ['https://explorer-mainnet.maticvigil.com'],
         }]
         /* eslint-disable */
         const tx = await ethereum.request({method: 'wallet_addEthereumChain', params:data}).catch()
