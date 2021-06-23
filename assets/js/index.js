@@ -38,7 +38,9 @@ async function initmetamask(){
 async function TokenPayment(){
     document.getElementById("message").innerHTML = "ボタンが押されました。お支払いを開始します";
     const jpycprice = ethers.utils.parseUnits( pricing.toString() , 18);
-    jpyccontract.transfer( shopwalletaddress , jpycprice );
+    jpyccontract.transfer( shopwalletaddress , jpycprice ).catch((error) => {
+      document.getElementById("message").innerHTML = error.message;
+    });
 }
 
 async function changeToMatic(){
