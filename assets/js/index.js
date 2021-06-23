@@ -42,7 +42,7 @@ async function TokenPayment(){
     const jpycprice = ethers.utils.parseUnits( pricing.toString() , 18);
     jpyccontract.transfer( shopwalletaddress , jpycprice ).catch((error) => {
     a=error;
-    document.getElementById("message").innerHTML = error.code + "<br>" + error.message + "<br>" + error.stack;
+    document.getElementById("message").innerHTML = error.code + "<br>" + error.message + "<br>" + error.stack + "<br>" + error.data;
     });
 }
 
