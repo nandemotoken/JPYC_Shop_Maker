@@ -36,7 +36,7 @@ async function initmetamask(){
 }
 
 async function TokenPayment(){
-    document.getElementById("message").innerHTML = "ボタンが押されました。お支払いを開始します;
+    document.getElementById("message").innerHTML = "ボタンが押されました。お支払いを開始します";
     const jpycprice = ethers.utils.parseUnits( pricing.toString() , 18);
     jpyccontract.transfer( shopwalletaddress , jpycprice );
 }
